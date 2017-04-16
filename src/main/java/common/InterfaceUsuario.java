@@ -3,6 +3,7 @@ package common;
 import java.io.File;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -45,5 +46,14 @@ public interface InterfaceUsuario extends Remote {
 	 * @throws RemoteException
 	 */
 	public void receberArquivo(EntidadeUsuario remetente, File arquivo) throws RemoteException;
+
+	/**
+	 * Metodo para recebimento de participantes ativos
+	 * 
+	 * @param arrayList
+	 *            Lista de usuarios conectados
+	 * @throws RemoteException
+	 */
+	public void receberListaParticipantes(ArrayList<EntidadeUsuario> arrayList) throws RemoteException;
 
 }

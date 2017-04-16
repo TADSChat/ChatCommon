@@ -13,7 +13,7 @@ import javax.persistence.Table;
  *
  */
 @Entity
-@Table(name = "user")
+@Table(name = "chatUser")
 public class EntidadeUsuario {
 
 	@Id
@@ -24,8 +24,8 @@ public class EntidadeUsuario {
 	@Column(name = "user_name")
 	private String nome;
 
-	@Column(name = "user_login")
-	private String login;
+	@Column(name = "user_email")
+	private String email;
 
 	@Column(name = "user_password")
 	private String senha;
@@ -63,15 +63,15 @@ public class EntidadeUsuario {
 	/**
 	 * @return the login
 	 */
-	public String getLogin() {
-		return login;
+	public String getEmail() {
+		return email;
 	}
 
 	/**
-	 * @param login the login to set
+	 * @param email the email to set
 	 */
-	public EntidadeUsuario setLogin(final String login) {
-		this.login = login;
+	public EntidadeUsuario setEmail(final String email) {
+		this.email = email;
 		return this;
 	}
 
