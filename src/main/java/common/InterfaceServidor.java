@@ -61,7 +61,7 @@ public interface InterfaceServidor extends Remote {
 	 * @throws RemoteException
 	 */
 	public void enviarMensagem(EntidadeUsuario remetente, String mensagem) throws RemoteException;
-	
+
 	/**
 	 * Metodo para envio de arquivo de um usuario para outro
 	 * 
@@ -75,4 +75,13 @@ public interface InterfaceServidor extends Remote {
 	 */
 	public void enviarArquivo(EntidadeUsuario remetente, EntidadeUsuario destinatario, File arquivo)
 			throws RemoteException;
+
+	/**
+	 * Metodo para atualização de status
+	 * 
+	 * @param usuario
+	 *            Usuario que esta atualizando o status
+	 * @throws RemoteException
+	 */
+	void atualizarStatus(EntidadeUsuario usuario) throws RemoteException;
 }

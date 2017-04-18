@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 /**
  * Classe persistida do Usuario com inteface fluente
@@ -30,6 +31,9 @@ public class EntidadeUsuario {
 	@Column(name = "user_password")
 	private String senha;
 
+	@Transient
+	private Status status;
+
 	/**
 	 * @return the id
 	 */
@@ -38,7 +42,8 @@ public class EntidadeUsuario {
 	}
 
 	/**
-	 * @param id the id to set
+	 * @param id
+	 *            the id to set
 	 */
 	public EntidadeUsuario setId(final Integer id) {
 		this.id = id;
@@ -53,7 +58,8 @@ public class EntidadeUsuario {
 	}
 
 	/**
-	 * @param nome the nome to set
+	 * @param nome
+	 *            the nome to set
 	 */
 	public EntidadeUsuario setNome(final String nome) {
 		this.nome = nome;
@@ -68,7 +74,8 @@ public class EntidadeUsuario {
 	}
 
 	/**
-	 * @param email the email to set
+	 * @param email
+	 *            the email to set
 	 */
 	public EntidadeUsuario setEmail(final String email) {
 		this.email = email;
@@ -83,12 +90,27 @@ public class EntidadeUsuario {
 	}
 
 	/**
-	 * @param senha the senha to set
+	 * @param senha
+	 *            the senha to set
 	 */
 	public EntidadeUsuario setSenha(final String senha) {
 		this.senha = senha;
 		return this;
 	}
 
-	
+	/**
+	 * @return the status
+	 */
+	public Status getStatus() {
+		return status;
+	}
+
+	/**
+	 * @param status
+	 *            the status to set
+	 */
+	public EntidadeUsuario setStatus(final Status status) {
+		this.status = status;
+		return this;
+	}
 }
