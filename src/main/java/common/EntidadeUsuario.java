@@ -1,5 +1,7 @@
 package common;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -15,7 +17,12 @@ import javax.persistence.Transient;
  */
 @Entity
 @Table(name = "chatUser")
-public class EntidadeUsuario {
+public class EntidadeUsuario implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue
