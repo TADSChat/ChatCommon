@@ -24,9 +24,10 @@ public interface InterfaceServidor extends Remote {
 	 *            Usuario que esta se conectando
 	 * @param interfaceUsuario
 	 *            Inteface que contem os metodos a serem executados no cliente
+	 * @return 
 	 * @throws RemoteException
 	 */
-	public void conectarChat(EntidadeUsuario usuario, InterfaceUsuario interfaceUsuario) throws RemoteException;
+	public EntidadeUsuario conectarChat(EntidadeUsuario usuario, InterfaceUsuario interfaceUsuario) throws RemoteException;
 
 	/**
 	 * Metodo para desconectar o usuario do servidor de chat
