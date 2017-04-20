@@ -16,7 +16,7 @@ import java.rmi.RemoteException;
 public interface InterfaceServidor extends Remote {
 
 	public static final String NOME = "ChatRMI";
-
+//
 	/**
 	 * Metodo para conectar o usuario ao servidor de chat
 	 * 
