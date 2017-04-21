@@ -102,6 +102,6 @@ public interface InterfaceServidor extends Remote {
 	 * @param arquivo
 	 * @throws RemoteException
 	 */
-	public void enviarArquivo(EntidadeUsuario remetente, EntidadeUsuario destinatario, File arquivo)
+	public void enviarArquivo(EntidadeUsuario remetente, EntidadeUsuario destinatario, Arquivo arquivo)
 			throws RemoteException;
 }
