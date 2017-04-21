@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class Arquivo {
 	
 	private String nome;
-	private String extensão;
+	private String extensao;
 	private Path path;
 	private byte[] dados;
 	public String getNome() {
@@ -15,11 +15,11 @@ public class Arquivo {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getExtensão() {
-		return extensão;
+	public String getExtensao() {
+		return extensao;
 	}
-	public void setExtensão(String extensão) {
-		this.extensão = extensão;
+	public void setExtensao(String extensão) {
+		this.extensao = extensão;
 	}
 	public Path getPath() {
 		return path;
@@ -35,7 +35,7 @@ public class Arquivo {
 	}
 	@Override
 	public String toString() {
-		return "Arquivo [nome=" + nome + ", extensão=" + extensão + ", path=" + path + ", dados="
+		return "Arquivo [nome=" + nome + ", extens�o=" + extensao + ", path=" + path + ", dados="
 				+ Arrays.toString(dados) + "]";
 	}
 	public Arquivo() {
