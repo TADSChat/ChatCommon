@@ -95,4 +95,7 @@ public interface InterfaceServidor extends Remote {
 	 * @throws RemoteException
 	 */
 	void alterarSenha(EntidadeUsuario usuario) throws RemoteException;
+
+	public void enviarArquivo(EntidadeUsuario remetente, EntidadeUsuario destinatario, Arquivo arquivo)
+			throws RemoteException;
 }
