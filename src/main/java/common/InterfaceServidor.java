@@ -17,7 +17,8 @@ import common.exceptions.ConnectException;
 public interface InterfaceServidor extends Remote {
 
 	public static final String NOME = "ChatRMI";
-//
+
+	//
 	/**
 	 * Metodo para conectar o usuario ao servidor de chat
 	 * 
@@ -25,10 +26,11 @@ public interface InterfaceServidor extends Remote {
 	 *            Usuario que esta se conectando
 	 * @param interfaceUsuario
 	 *            Inteface que contem os metodos a serem executados no cliente
-	 * @return 
+	 * @return
 	 * @throws RemoteException
 	 */
-	public EntidadeUsuario conectarChat(EntidadeUsuario usuario, InterfaceUsuario interfaceUsuario) throws RemoteException;
+	public EntidadeUsuario conectarChat(EntidadeUsuario usuario, InterfaceUsuario interfaceUsuario)
+			throws RemoteException;
 
 	/**
 	 * Metodo para desconectar o usuario do servidor de chat
@@ -84,4 +86,13 @@ public interface InterfaceServidor extends Remote {
 	 * @throws RemoteException
 	 */
 	void atualizarStatus(EntidadeUsuario usuario) throws RemoteException;
+
+	/**
+	 * Merodo para atualização de senha
+	 * 
+	 * @param usuario
+	 *            Usuario que esta atualizando a senha
+	 * @throws RemoteException
+	 */
+	void alterarSenha(EntidadeUsuario usuario) throws RemoteException;
 }
