@@ -36,7 +36,7 @@ public interface InterfaceUsuario extends Remote {
 	 *            Arquivo recebido
 	 * @throws RemoteException
 	 */
-	public void receberArquivo(EntidadeUsuario remetente, Arquivo arquivo) throws RemoteException;
+	public void receberArquivo(EntidadeUsuario remetente, File arquivo) throws RemoteException;
 
 	/**
 	 * Metodo para recebimento de participantes ativos
