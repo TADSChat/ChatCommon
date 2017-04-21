@@ -1,9 +1,8 @@
 package common;
 
+import java.io.File;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
-
-import common.exceptions.ConnectException;
 
 /**
  * Interface para o Servidor de Chat.
@@ -96,6 +95,6 @@ public interface InterfaceServidor extends Remote {
 	 */
 	void alterarSenha(EntidadeUsuario usuario) throws RemoteException;
 
-	public void enviarArquivo(EntidadeUsuario remetente, EntidadeUsuario destinatario, Arquivo arquivo)
+	public void enviarArquivo(EntidadeUsuario remetente, EntidadeUsuario destinatario, File arquivo)
 			throws RemoteException;
 }
