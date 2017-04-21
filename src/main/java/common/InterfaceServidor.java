@@ -1,6 +1,5 @@
 package common;
 
-import java.io.File;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 
@@ -64,17 +63,15 @@ public interface InterfaceServidor extends Remote {
 	public void enviarMensagem(EntidadeUsuario remetente, String mensagem) throws RemoteException;
 
 	/**
-	 * Metodo para envio de arquivo de um usuario para outro
+	 * Metodo para encontrar um destinatário para envio de arquivo...
 	 * 
 	 * @param remetente
 	 *            Usuario que esta enviando o arquivo
 	 * @param destinatario
 	 *            Usuario que esta recebendo o arquivo
-	 * @param arquivo
-	 *            Arquivo a ser enviado
 	 * @throws RemoteException
 	 */
-	public void enviarArquivo(EntidadeUsuario remetente, EntidadeUsuario destinatario, Arquivo arquivo)
+	public void buscarDestinatario(EntidadeUsuario remetente, EntidadeUsuario destinatario)
 			throws RemoteException;
 
 	/**
