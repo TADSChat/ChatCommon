@@ -3,6 +3,8 @@ package common;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 
+import common.exceptions.ConnectException;
+
 /**
  * Interface para o Servidor de Chat.
  * 
@@ -26,7 +28,7 @@ public interface InterfaceServidor extends Remote {
 	 * @return 
 	 * @throws RemoteException
 	 */
-	public EntidadeUsuario conectarChat(EntidadeUsuario usuario, InterfaceUsuario interfaceUsuario) throws RemoteException;
+	public EntidadeUsuario conectarChat(EntidadeUsuario usuario, InterfaceUsuario interfaceUsuario) throws RemoteException, ConnectException;
 
 	/**
 	 * Metodo para desconectar o usuario do servidor de chat
@@ -71,7 +73,7 @@ public interface InterfaceServidor extends Remote {
 	 *            Usuario que esta recebendo o arquivo
 	 * @throws RemoteException
 	 */
-	public void buscarDestinatario(EntidadeUsuario remetente, EntidadeUsuario destinatario)
+	public InterfaceUsuario buscarDestinatario(EntidadeUsuario remetente, EntidadeUsuario destinatario)
 			throws RemoteException;
 
 	/**
