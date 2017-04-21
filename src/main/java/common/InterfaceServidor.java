@@ -87,7 +87,7 @@ public interface InterfaceServidor extends Remote {
 	void atualizarStatus(EntidadeUsuario usuario) throws RemoteException;
 
 	/**
-	 * Merodo para atualização de senha
+	 * Metodo para atualização de senha
 	 * 
 	 * @param usuario
 	 *            Usuario que esta atualizando a senha
@@ -96,12 +96,16 @@ public interface InterfaceServidor extends Remote {
 	void alterarSenha(EntidadeUsuario usuario) throws RemoteException;
 
 	/**
+	 * Metodo para enviar arquivo
 	 * 
 	 * @param remetente
+	 *            Usuario que esta enviando o arquivo
 	 * @param destinatario
+	 *            Usuario que ira reseber o arquivo
 	 * @param arquivo
+	 *            Arquivo que sera enviado
 	 * @throws RemoteException
 	 */
-	public void enviarArquivo(EntidadeUsuario remetente, EntidadeUsuario destinatario, Arquivo arquivo)
+	public void enviarArquivo(EntidadeUsuario remetente, EntidadeUsuario destinatario, File arquivo)
 			throws RemoteException;
 }
