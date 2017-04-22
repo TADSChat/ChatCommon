@@ -2,6 +2,6 @@ package common;
 
 public enum Status {
 
-	OFFLINE, ONLINE, OCUPADO, AUSENTE;
+	ONLINE, AUSENTE, OCUPADO, OFFLINE;
 
 }
