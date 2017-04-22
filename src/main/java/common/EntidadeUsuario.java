@@ -17,7 +17,7 @@ import javax.persistence.Transient;
  */
 @Entity
 @Table(name = "chatUser")
-public class EntidadeUsuario implements Serializable{
+public class EntidadeUsuario implements Serializable {
 
 	/**
 	 * 
@@ -40,6 +40,12 @@ public class EntidadeUsuario implements Serializable{
 
 	@Transient
 	private Status status;
+
+	@Transient
+	private String ipConexao;
+
+	@Transient
+	private Integer portaConexao;
 
 	/**
 	 * @return the id
@@ -118,6 +124,39 @@ public class EntidadeUsuario implements Serializable{
 	 */
 	public EntidadeUsuario setStatus(final Status status) {
 		this.status = status;
+		return this;
+	}
+
+	/**
+	 * @return the ipConexao
+	 */
+	public String getIpConexao() {
+		return ipConexao;
+	}
+
+	/**
+	 * @param ipConexao
+	 *            the ipConexao to set
+	 * @return
+	 */
+	public EntidadeUsuario setIpConexao(final String ipConexao) {
+		this.ipConexao = ipConexao;
+		return this;
+	}
+
+	/**
+	 * @return the portaConexao
+	 */
+	public Integer getPortaConexao() {
+		return portaConexao;
+	}
+
+	/**
+	 * @param portaConexao
+	 *            the portaConexao to set
+	 */
+	public EntidadeUsuario setPortaConexao(final Integer portaConexao) {
+		this.portaConexao = portaConexao;
 		return this;
 	}
 }
