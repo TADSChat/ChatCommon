@@ -3,7 +3,6 @@ package common;
 import java.io.File;
 import java.io.Serializable;
 import java.nio.file.Path;
-import java.util.Arrays;
 
 public class Arquivo implements Serializable {
 
