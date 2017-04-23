@@ -49,4 +49,9 @@ public interface InterfaceUsuario extends Remote {
 	 */
 	public void receberListaParticipantes(List<EntidadeUsuario> lista) throws RemoteException;
 
+	/**
+	 * Metodo para desconectar o usuario pelo servidor
+	 * @throws RemoteException
+	 */
+	public void desconectarForcado() throws RemoteException;
 }
