@@ -16,6 +16,8 @@ import java.util.List;
  */
 public interface InterfaceUsuario extends Remote {
 
+	public static final String NOME = "Transferencia";
+	
 	/**
 	 * Metodo para recebimento de mensagem
 	 * 
