@@ -26,7 +26,7 @@ public interface InterfaceUsuario extends Remote {
 	 *            Mensagem recebida
 	 * @throws RemoteException
 	 */
-	public void receberMensagem(EntidadeUsuario remetente, String mensagem) throws RemoteException;
+	public void receberMensagem(EntidadeUsuario remetente, TipoMensagem tipoMensagem, String mensagem) throws RemoteException;
 
 	/**
 	 * Metodo para recebimento de arquivo
