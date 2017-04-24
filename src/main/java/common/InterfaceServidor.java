@@ -95,17 +95,4 @@ public interface InterfaceServidor extends Remote {
 	 */
 	public boolean alterarSenha(EntidadeUsuario usuario) throws RemoteException;
 
-	/**
-	 * Metodo para enviar arquivo
-	 * 
-	 * @param remetente
-	 *            Usuario que esta enviando o arquivo
-	 * @param destinatario
-	 *            Usuario que ira reseber o arquivo
-	 * @param arquivo
-	 *            Arquivo que sera enviado
-	 * @throws RemoteException
-	 */
-	public void enviarArquivo(EntidadeUsuario remetente, EntidadeUsuario destinatario, File arquivo)
-			throws RemoteException;
 }
