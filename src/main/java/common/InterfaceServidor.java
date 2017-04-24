@@ -66,18 +66,6 @@ public interface InterfaceServidor extends Remote {
 	public void enviarMensagem(EntidadeUsuario remetente, String mensagem) throws RemoteException;
 
 	/**
-	 * Metodo para encontrar um destinat�rio para envio de arquivo...
-	 * 
-	 * @param remetente
-	 *            Usuario que esta enviando o arquivo
-	 * @param destinatario
-	 *            Usuario que esta recebendo o arquivo
-	 * @throws RemoteException
-	 */
-	public InterfaceUsuario buscarDestinatario(EntidadeUsuario remetente, EntidadeUsuario destinatario)
-			throws RemoteException;
-
-	/**
 	 * Metodo para atualização de status
 	 * 
 	 * @param usuario
