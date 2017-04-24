@@ -1,6 +1,7 @@
 package common;
 
 import java.io.File;
+import java.net.SocketException;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.List;
@@ -52,6 +53,6 @@ public interface InterfaceUsuario extends Remote {
 	 * Metodo para desconectar o usuario pelo servidor
 	 * @throws RemoteException
 	 */
-	public void desconectarForcado() throws RemoteException;
+	public void desconectarForcado() throws RemoteException, SocketException;
 
 }
